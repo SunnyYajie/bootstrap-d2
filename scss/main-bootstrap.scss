@@ -1,0 +1,14 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+$primary: rgb(70, 245, 26);
+$secondary: rgb(255, 98, 255);
+
+$new-colors: (
+  "neon":    rgb(131, 220, 255),
+  "magenta":    rgb(251, 125, 255),
+);
+
+$theme-colors: map-merge($theme-colors, $new-colors);
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
